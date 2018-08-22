@@ -1,0 +1,28 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+
+development:
+  <<: *default
+  database: wordoftruth_development
+  username: rails_dev
+  password: messi123
+  template: template0
+  host: localhost
+  port: 5432
+  
+test:
+  <<: *default
+  database: wordoftruth_test
+  host: localhost
+  port: 5432
+  username: rails_dev
+  template: template0
+  password: messi123
+
+production:
+  <<: *default
+  database: wordoftruth_production
+  username: wordoftruth
+  password: <%= ENV['WORDOFTRUTH_DATABASE_PASSWORD'] %>
