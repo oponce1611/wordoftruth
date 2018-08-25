@@ -10,6 +10,14 @@
   </head>
 
   <body>
-    <%= yield %>
+    <div id="main-width" class="container mt-2">
+      <div class='box-1'>
+        <%= link_to image_tag('WOTBC-LOGO.svg', width: 500, class: 'my-4 mx-auto d-block'), root_path %>
+        <%= link_to 'Donate', donate_path, class: 'red-btn' %>
+      </div>
+      
+      <%= render('layouts/navigation') %>
+      <%= yield %>
+    </div>
   </body>
 </html>

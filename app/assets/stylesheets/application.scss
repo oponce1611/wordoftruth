@@ -1,4 +1,71 @@
 body {
     background: linear-gradient(#fff, #7fdf1f) fixed;
 }
+
+#main-width {
+    max-width: 1000px;
+    padding: 0;
+}
+
+.black-navigation {
+  height: 47px;
+  width: 443px;
+  background: linear-gradient(#7a7a7a, #000);
+  border-radius: 10px;
+  font-size: 0;
+}
+
+.black-navigation a {
+  color: white;
+  display: inline-block;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 17px;
+  text-align: center;
+  border-left: 1px solid #fff;
+  border-right: 1px solid #999;
+  padding: 14px 17px;
+  margin: 0px;
+}
+
+.red-btn {
+  color: #7c0000;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 1;
+  text-decoration: none;
+  text-align: center;
+  background: linear-gradient(#fdd5d5, #ff5959);
+  border: 1px solid #fc4c4c;
+  border-radius: 3px;
+  padding: 5px 10px;
+  margin: 0px;
+  cursor: pointer;
+}
+
+.red-btn:hover {
+  color: #7c0000;
+  background: linear-gradient(#fde4e4, #ff7a7a);
+}
+
+.red-btn:focus {
+  color: #7c0000;
+  text-decoration: none;
+}
+
+.red-btn:active {
+  text-decoration: none;
+  background: linear-gradient(#ff2b2b, #fdd5d5);
+}
+
+.box-1 {
+  position: relative;
+}
+
+.box-1 a:nth-child(2) {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
 @import "bootstrap";
