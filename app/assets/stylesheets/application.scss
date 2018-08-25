@@ -9,23 +9,50 @@ body {
 
 .black-navigation {
   height: 47px;
-  width: 443px;
-  background: linear-gradient(#7a7a7a, #000);
+  width: 440.7px;
+  background: -webkit-linear-gradient(top, #4c4c4c 0%,#2c2c2c 50%,#000000 50%,#000000 50%,#131313 100%);
   border-radius: 10px;
   font-size: 0;
 }
 
 .black-navigation a {
   color: white;
+  text-decoration: none;
   display: inline-block;
   font-size: 17px;
   font-weight: bold;
   line-height: 17px;
   text-align: center;
-  border-left: 1px solid #fff;
-  border-right: 1px solid #999;
+  border-left: 1px solid #9b9b9b;
+  border-right: 1px solid #868686;
   padding: 14px 17px;
   margin: 0px;
+}
+
+.black-navigation a:first-child {
+  border-left: 0px solid #999;
+}
+
+.black-navigation a:last-child {
+  border-right: 0px solid #999;
+}
+
+.black-navigation a:hover {
+  text-decoration: none;
+  color: white;
+  background: -webkit-linear-gradient(top, #656565 1%,#4a4a4a 50%,#242424 50%,#242424 50%,#343434 100%);
+}
+
+.black-navigation a:active {
+  background: -webkit-linear-gradient(top, #131313 0%,#000000 50%,#000000 50%,#2c2c2c 50%,#4c4c4c 100%);
+}
+
+.black-navigation a:first-child:hover {
+  border-radius: 10px 0 0 10px;
+}
+
+.black-navigation a:last-child:hover {
+  border-radius: 0px 10px 10px 0px;
 }
 
 .red-btn {
@@ -67,5 +94,10 @@ body {
   position: absolute;
   top: 0px;
   right: 0px;
+}
+
+.white-box  {
+  background-color: white;
+  border-radius: 0 0 15px 15px;
 }
 @import "bootstrap";
